@@ -26,7 +26,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/hero.jpg);
+  background: url(assets/hero.jpg);
   background-size: cover;
 }
 
@@ -508,7 +508,7 @@ section {
     position: relative;
     width: 40px;
     height: 40px;
-    background: url(/assets/menu.svg);
+    background: url(assets/menu.svg);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
@@ -517,7 +517,7 @@ section {
 
   .menuToggle.active {
 
-    background: url(/assets/close-black.svg);
+    background: url(assets/close-black.svg);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
