@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Martel:wght@200;300;400;600;700;800;900&family=Oleo+Script&family=Oleo+Script+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 :root {
   --limegreen: #bae573;
+  --oat: #F0EADE;
 }
 
 * {
@@ -31,11 +33,29 @@ p {
 .banner .content {
   max-width: 900px;
   text-align: center;
+
+  border-radius: 15px;
+  border: 0 solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 50px;
 }
 
 .banner .content h2 {
-  font-size: 5em;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
   color: white;
+}
+
+.banner .content h2 span {
+  font-family: "Oleo Script", cursive;
+  font-size: 1.2em;
+  text-transform: none;
+  font-weight: 100;
+  color: var(--limegreen);
+
+  position: relative;
+
 }
 
 .banner .content p {
@@ -61,6 +81,7 @@ p {
   letter-spacing: 4px;
   
 }
+
 
 header {
   position: fixed;
@@ -144,6 +165,22 @@ section {
   
 }
 
+.line {
+  
+    background-color: var(--limegreen);
+    box-sizing: border-box;
+    
+    height: 1px;
+    line-height: 24px;
+    max-height: 1px;
+    transform-origin: 100% 50%;
+    width: 100px;
+
+    margin: 10px 0 25px 0;
+  }
+  
+}
+
 .row .col50 .imgBox {
   
   position: relative;
@@ -161,12 +198,17 @@ section {
   object-fit: cover;
 }
 
+
 .title {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.benefits {
+  background: #F0EADE;
 }
 
 .menu .content {
@@ -253,8 +295,8 @@ section {
 }
 
 .testimonial {
-  background-color: #111;
-  background-size: cover;
+  background-color: var(--oat);
+  
 }
 
 .white .titleText,
@@ -276,18 +318,22 @@ section {
   width: 340px;
   margin: 20px;
   padding: 40px;
-  background: #fff;
+  
+  
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 5px 35px rgba(68, 68, 68, 0.05);
 }
 
 
 .testimonial .content .box .imgBox {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 20px;
   border-radius: 50%;
   overflow: hidden;
@@ -307,9 +353,39 @@ section {
   text-align: center;
 }
 
+
+
+
+
+
+.testimonial .content .box:before {
+
+  content: "“";
+  color: var(--limegreen);
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 8em;
+  position: absolute;
+  left: -0.25em;
+  top: 0.35em;
+  
+
+
+/*  font-family: 'FontAwesome';
+
+  content: "\201C";
+  color: var(--limegreen);
+  position: absolute;
+  font-size: 6em;
+  opacity: 0.5;
+  font-style: normal;
+  top: 0px;
+  left: 20px;*/
+}
+
 .testimonial .content .box .text p {
-  color: #6666;
-  font-style: italic;
+  color: rgb(32, 32, 32);
+  font-family: "Martel", serif;
+  /*font-style: italic;*/
   font-weight: 400;
 }
 
@@ -321,16 +397,18 @@ section {
 }
 
 .contact {
-  background: url(/assets/hero.jpg);
-  background-size: cover;
+  background-color: #fff;
 }
 
 .contactForm {
   padding: 75px 50px;
   background: #fff;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  width: 100%;
+  /* max-width: 500px;*/
   margin-top: 50px;
+  
+ 
 }
 
 .contactForm h3 {
@@ -349,7 +427,7 @@ section {
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
   width: 100%;
-  border: 1px solid #555;
+  /*border: 1px solid #555;*/
   padding: 10px;
   color: #111;
   outline: none;
@@ -375,13 +453,20 @@ section {
 }
 
 .copyrightText {
-  padding: 8px 40px;
+  padding: 20px 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: justify;
+  background-color: var(--oat);
 }
 
 .copyrightText p {
   color: #333;
+  font-size: 0.8em
+}
+
+.copyrightText p span {
+  color: var(--limegreen);
+  font-weight: 600;
 }
 
 
