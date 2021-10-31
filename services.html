@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Can Do Catering | Food made with heart</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Martel:wght@200;300;400;600;700;800;900&family=Oleo+Script&family=Oleo+Script+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!------------------------------------------------------------------- Header section -------------------------------------------------------------->
+
+
+    <header>
+
+        <a href="#" class="logo">two<span>can</span>do</a>
+
+        <div class="menuToggle" onclick="toggleMenu();">
+
+        </div>
+
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></li>
+
+        </ul>
+    </header>
+
+
+    
+    <!-------------------------------------------- Banner Gallery --------------------------------------------------->
+    
+    <!-------------------------------------------- Image Gallery --------------------------------------------------->
+    <!-------------------------------------------- Image Gallery --------------------------------------------------->
+    <!-------------------------------------------- Image Gallery --------------------------------------------------->
+
+
+
+
+
+<div class="container-fluid">
+    <div class="d-flex flex-row flex-wrap justify-content-center">
+        <div class="d-flex flex-column">
+            <img src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?auto=format&fit=crop&w=668&q=80" class="img-fluid">
+            
+            <img src="https://images.unsplash.com/photo-1502865787650-3f8318917153?auto=format&fit=crop&w=334&q=80" class="img-fluid">
+        </div>
+        
+        <div class="d-flex flex-column">
+            <img src="https://images.unsplash.com/photo-1500816558239-6b91f4256ead?auto=format&fit=crop&w=331&q=80" class="img-fluid">
+            
+            <img src="https://images.unsplash.com/photo-1487376318617-f43c7b41e2e2?auto=format&fit=crop&w=750&q=80" class="img-fluid scale">
+        </div>
+        
+        <div class="d-flex flex-column">
+            <img src="https://images.unsplash.com/photo-1497888329096-51c27beff665?auto=format&fit=crop&w=751&q=80" class="img-fluid scale mb-2">
+            <img src="https://images.unsplash.com/photo-1505253468034-514d2507d914?auto=format&fit=crop&w=334&q=80"  class="img-fluid">
+        </div>
+        
+        <div class="d-flex flex-column">
+            <img src="https://images.unsplash.com/photo-1502550900787-e956c314a221?auto=format&fit=crop&w=334&q=80" class="img-fluid m-1 p-1">
+              <img src="https://images.unsplash.com/photo-1455853659719-4b521eebc76d?auto=format&fit=crop&w=750&q=80" class="img-fluid image m-1 p-1">
+        </div>
+    </div>
+</div>
+
+
+<!-------------------------------------------- Image Gallery --------------------------------------------------->
+<!-------------------------------------------- Image Gallery --------------------------------------------------->
+<!-------------------------------------------- Image Gallery --------------------------------------------------->
+<!-------------------------------------------- Image Gallery --------------------------------------------------->
+<!-------------------------------------------- Image Gallery --------------------------------------------------->
+
+
+    <script type="text/javascript">
+
+        window.addEventListener("scroll", function(){
+
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+
+</html>
