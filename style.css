@@ -28,7 +28,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/about.jpg);
+  background: url(assets/about.jpg);
   background-size: cover;
 }
 
